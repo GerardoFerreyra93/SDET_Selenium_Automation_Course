@@ -8,26 +8,26 @@ using System.Threading.Tasks;
 
 namespace SeleniumTest.Init
 {
+    //@Autor Gerardo.Ferreyra SDETCourse 08-Agosto-2022
     public class BrowserDriverInit
     {
         IWebDriver driver;
-
-        //
-
+        
         public void Init_Browser()
         {
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
+            driver.Navigate().GoToUrl("https://es-la.facebook.com/");
         }
-
-        public string Title
+       //encapsulamiento
+        public string Title{ get { return driver.Title; }}    
+       
+        public void Test_Case1()
         {
-            get { return driver.Title; }
-        }    
-
-        public void GoTo(string url)
-        {
-            driver.Url = url;
+            Thread.Sleep(10000);
+            IWebElement logoFace = driver.FindElement(By.XPath("//*[@id='content']/div/div/div/div[1]/div/img"));
+            Assert.IsTrue(logoFace.Displayed);
+            Console.WriteLine("DONE");
         }
 
         public void Close()
@@ -35,9 +35,7 @@ namespace SeleniumTest.Init
             driver.Quit();
         }
 
-        public IWebDriver getDriver
-        {
-            get { return driver; }
-        }
+        //encapsulamiento
+        public IWebDriver getDriver{ get { return driver; }}
     }
 }
