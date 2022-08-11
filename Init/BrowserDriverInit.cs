@@ -12,6 +12,8 @@ namespace SeleniumTest.Init
     {
         IWebDriver driver;
 
+        //
+
         public void Init_Browser()
         {
             driver = new ChromeDriver();
