@@ -17,9 +17,9 @@ namespace SeleniumTest.Init
 
         public void Init_Browser()
         {
-            //driver = new ChromeDriver("C:\\Users\\Fecker\\source\\repos\\SDETSelenium\\SDETSelenium\\Drivers");
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
+
         }
 
         private WebDriverWait _wait => new WebDriverWait(driver, TimeSpan.FromSeconds(2));

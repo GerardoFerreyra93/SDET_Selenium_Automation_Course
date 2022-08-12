@@ -16,13 +16,15 @@ namespace SeleniumTest
         [Test]
         public void Test1()
         {
+            ValidateFacebookLogo();
         }
 
 
         [Test]
         public void Test2()
         {
-            ValidateFacebookLogo();
+
+            ValidateMessageDescription();
         }
 
         [TearDown]

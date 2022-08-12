@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
 using SeleniumTest.Init;
 using SeleniumTest.Pages;
 using System;
@@ -59,7 +60,20 @@ namespace SeleniumTest.Accions
             }
 
             Assert.IsTrue(FaceLogo.Displayed);
+         
 
+        }
+
+        //explicit wait
+        internal void ValidateMessageDescription()
+        {
+            using(IWebDriver driver = new ChromeDriver())
+            {
+                driver.Url = "https://www.facebook.com";
+                WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
+                IWebElement btnLogin = wait.Until<IWebElement>(d => d.FindElement(By.XPath("//*[@id='content']/div/div/div/div[1]/h2")));
+                Console.WriteLine("Explicit Wait DONE");
+            }
         }
     }
 }
