@@ -11,6 +11,8 @@ C:\Users\gerardo.ferreyra\source\repos\SeleniumTest\SeleniumTest\bin\Debug\net6.
 C:\Users\gerardo.ferreyra\source\repos\SeleniumTest\SeleniumTest\bin\Debug\net6.0\SeleniumTest.runtimeconfig.json
 C:\Users\gerardo.ferreyra\source\repos\SeleniumTest\SeleniumTest\bin\Debug\net6.0\SeleniumTest.dll
 C:\Users\gerardo.ferreyra\source\repos\SeleniumTest\SeleniumTest\bin\Debug\net6.0\SeleniumTest.pdb
+C:\Users\gerardo.ferreyra\source\repos\SeleniumTest\SeleniumTest\bin\Debug\net6.0\SeleniumExtras.PageObjects.dll
+C:\Users\gerardo.ferreyra\source\repos\SeleniumTest\SeleniumTest\bin\Debug\net6.0\SeleniumExtras.WaitHelpers.dll
 C:\Users\gerardo.ferreyra\source\repos\SeleniumTest\SeleniumTest\bin\Debug\net6.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\Users\gerardo.ferreyra\source\repos\SeleniumTest\SeleniumTest\bin\Debug\net6.0\Microsoft.TestPlatform.CoreUtilities.dll
 C:\Users\gerardo.ferreyra\source\repos\SeleniumTest\SeleniumTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll

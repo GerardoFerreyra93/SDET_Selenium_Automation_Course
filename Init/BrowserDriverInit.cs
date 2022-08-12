@@ -1,41 +1,45 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace SeleniumTest.Init
 {
-    //@Autor Gerardo.Ferreyra SDETCourse 08-Agosto-2022
     public class BrowserDriverInit
     {
         IWebDriver driver;
-        
+
         public void Init_Browser()
         {
+            //driver = new ChromeDriver("C:\\Users\\Fecker\\source\\repos\\SDETSelenium\\SDETSelenium\\Drivers");
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
-            driver.Navigate().GoToUrl("https://es-la.facebook.com/");
         }
-       //encapsulamiento
-        public string Title{ get { return driver.Title; }}    
-       
-        public void Test_Case1()
+
+        private WebDriverWait _wait => new WebDriverWait(driver, TimeSpan.FromSeconds(2));
+        public string Title { get { return driver.Title; } }
+
+        public void GoTo(string url)
         {
-            Thread.Sleep(10000);
-            IWebElement logoFace = driver.FindElement(By.XPath("//*[@id='content']/div/div/div/div[1]/div/img"));
-            Assert.IsTrue(logoFace.Displayed);
-            Console.WriteLine("DONE");
+            driver.Url = url;
         }
 
         public void Close()
         {
             driver.Quit();
         }
+        public IWebElement WaitForElement(By locator)
+        {
+            return _wait.Until(ExpectedConditions.ElementIsVisible(locator));
+        }
 
-        //encapsulamiento
-        public IWebDriver getDriver{ get { return driver; }}
+        public IWebDriver getDriver { get { return driver; } }
+
     }
 }

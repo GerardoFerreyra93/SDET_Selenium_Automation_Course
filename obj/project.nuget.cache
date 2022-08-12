@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "WzNDw1IovEbqXsK6fP5FAeDXj1y7xKMrC4dTj4kL5E4J0oxxLHMlumwcE9HV6mwz3c6Rc47xnosALkJfNrK02g==",
+  "dgSpecHash": "4JRc/LwKkG8Gi1ZkbhzkK2bA3sEMcjNS8+gq1dIM8oEMjgKzo2oFhjzaKrUYjNUMFOQ29Q+L4f4ePpmgjeajWg==",
   "success": true,
   "projectFilePath": "C:\\Users\\gerardo.ferreyra\\source\\repos\\SeleniumTest\\SeleniumTest\\SeleniumTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
+    "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\dotnetseleniumextras.pageobjects\\3.11.0\\dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512",
+    "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\dotnetseleniumextras.pageobjects.core\\4.3.0\\dotnetseleniumextras.pageobjects.core.4.3.0.nupkg.sha512",
+    "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",
     "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\microsoft.net.test.sdk\\17.1.0\\microsoft.net.test.sdk.17.1.0.nupkg.sha512",
     "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
@@ -18,6 +21,7 @@
     "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\nunit3testadapter\\4.2.1\\nunit3testadapter.4.2.1.nupkg.sha512",
     "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\selenium.webdriver\\4.4.0\\selenium.webdriver.4.4.0.nupkg.sha512",
     "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\selenium.webdriver.chromedriver\\104.0.5112.7900\\selenium.webdriver.chromedriver.104.0.5112.7900.nupkg.sha512",
+    "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\seleniumextras.waithelpers\\1.0.2\\seleniumextras.waithelpers.1.0.2.nupkg.sha512",
     "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
   ],
   "logs": []

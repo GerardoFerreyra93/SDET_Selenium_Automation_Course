@@ -1,32 +1,34 @@
+using NUnit.Framework;
 using OpenQA.Selenium;
-using SeleniumTest.Init;
+using SeleniumTest.Accions;
 
 namespace SeleniumTest
 {
-    public class ChromeTest : BrowserDriverInit
+    public class ChromeTests : FacebookLogginAccions
     {
-        BrowserDriverInit browser = new BrowserDriverInit();
 
         [SetUp]
         public void Setup()
-        {            
-            browser.Init_Browser();
-
+        {
+            InitBrowser();
         }
 
         [Test]
-        public void Test()
+        public void Test1()
         {
-            browser.Test_Case1(); 
-            
+        }
+
+
+        [Test]
+        public void Test2()
+        {
+            ValidateFacebookLogo();
         }
 
         [TearDown]
-        public void closeBrowse()
+        public void closeBrowser()
         {
-            browser.Close();
-
+            CloseBrowser();
         }
-
     }
 }
