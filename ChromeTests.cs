@@ -14,18 +14,56 @@ namespace SeleniumTest
         }
 
         [Test]
-        public void Test1()
+        public void PlayGroundTest1()
         {
-            ValidateFacebookLogo();
+            ValidateDynamicIdElement();
+            
         }
 
 
         [Test]
-        public void Test2()
+        public void PlayGroundTest2()
         {
 
-            ValidateMessageDescription();
+            ValidateClassAttribute();
         }
+
+        [Test]
+        public void PlayGroundTest3()
+        {
+
+            ValidateHiddenLayers();
+        }
+
+        [Test]
+        public void PlayGroundTest4()
+        {
+
+            ValidateLoadDelay();
+        }
+
+        [Test]
+        public void PlayGroundTest5()
+        {
+
+            ValidateClick();
+        }
+
+        [Test]
+        public void PlayGroundTest6()
+        {
+
+            ButtonClick();
+        }
+
+        [Test]
+        public void PlayGroundTest7()
+        {
+
+            ValidateTextInput();
+        }
+        
+
 
         [TearDown]
         public void closeBrowser()

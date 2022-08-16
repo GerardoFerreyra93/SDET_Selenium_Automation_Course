@@ -19,6 +19,9 @@ namespace SeleniumTest.Init
         {
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
+            driver.Navigate().GoToUrl("http://uitestingplayground.com/");           
+            System.Threading.Thread.Sleep(5000);
+
 
         }
 

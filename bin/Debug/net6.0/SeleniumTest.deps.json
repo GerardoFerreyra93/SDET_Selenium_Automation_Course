@@ -15,9 +15,11 @@
           "NUnit": "3.13.3",
           "NUnit.Analyzers": "3.3.0",
           "NUnit3TestAdapter": "4.2.1",
+          "ObservableWinFormsEvents": "3.0.0",
           "Selenium.WebDriver": "4.4.0",
           "Selenium.WebDriver.ChromeDriver": "104.0.5112.7900",
           "SeleniumExtras.WaitHelpers": "1.0.2",
+          "YamlDotNet": "12.0.0",
           "coverlet.collector": "3.1.2"
         },
         "runtime": {
@@ -348,6 +350,17 @@
       },
       "NUnit.Analyzers/3.3.0": {},
       "NUnit3TestAdapter/4.2.1": {},
+      "ObservableWinFormsEvents/3.0.0": {
+        "dependencies": {
+          "System.Reactive": "5.0.0"
+        },
+        "runtime": {
+          "lib/net472/ObservableWinFormsEvents.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
       "Selenium.WebDriver/4.4.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
@@ -365,7 +378,23 @@
           "Selenium.WebDriver": "4.4.0"
         }
       },
-      "System.Reflection.Metadata/1.6.0": {}
+      "System.Reactive/5.0.0": {
+        "runtime": {
+          "lib/net5.0/System.Reactive.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.1"
+          }
+        }
+      },
+      "System.Reflection.Metadata/1.6.0": {},
+      "YamlDotNet/12.0.0": {
+        "runtime": {
+          "lib/net6.0/YamlDotNet.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.0.0"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -479,6 +508,13 @@
       "path": "nunit3testadapter/4.2.1",
       "hashPath": "nunit3testadapter.4.2.1.nupkg.sha512"
     },
+    "ObservableWinFormsEvents/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m8tQDhXpPevA18L7ehteFaczz87dC8kMN3blPzbAtqDSujMKp180psUD7cIUgGY4exwHP5DA9fNsgfEVbfanoA==",
+      "path": "observablewinformsevents/3.0.0",
+      "hashPath": "observablewinformsevents.3.0.0.nupkg.sha512"
+    },
     "Selenium.WebDriver/4.4.0": {
       "type": "package",
       "serviceable": true,
@@ -500,12 +536,26 @@
       "path": "seleniumextras.waithelpers/1.0.2",
       "hashPath": "seleniumextras.waithelpers.1.0.2.nupkg.sha512"
     },
+    "System.Reactive/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-erBZjkQHWL9jpasCE/0qKAryzVBJFxGHVBAvgRN1bzM0q2s1S4oYREEEL0Vb+1kA/6BKb5FjUZMp5VXmy+gzkQ==",
+      "path": "system.reactive/5.0.0",
+      "hashPath": "system.reactive.5.0.0.nupkg.sha512"
+    },
     "System.Reflection.Metadata/1.6.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-COC1aiAJjCoA5GBF+QKL2uLqEBew4JsCkQmoHKbN3TlOZKa2fKLz5CpiRQKDz0RsAOEGsVKqOD5bomsXq/4STQ==",
       "path": "system.reflection.metadata/1.6.0",
       "hashPath": "system.reflection.metadata.1.6.0.nupkg.sha512"
+    },
+    "YamlDotNet/12.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sMp20zI63j7xVoor98vGeDxteLeyuAlM330L7XbXxMMPjLdP1mwoK/5Nn/8Vldc9hUMN5otkg88bVLEtQnPdaw==",
+      "path": "yamldotnet/12.0.0",
+      "hashPath": "yamldotnet.12.0.0.nupkg.sha512"
     }
   }
 }

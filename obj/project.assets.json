@@ -389,6 +389,18 @@
           "build/netcoreapp2.1/NUnit3TestAdapter.props": {}
         }
       },
+      "ObservableWinFormsEvents/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive": "5.0.0"
+        },
+        "compile": {
+          "lib/net472/ObservableWinFormsEvents.dll": {}
+        },
+        "runtime": {
+          "lib/net472/ObservableWinFormsEvents.dll": {}
+        }
+      },
       "Selenium.WebDriver/4.4.0": {
         "type": "package",
         "dependencies": {
@@ -419,6 +431,18 @@
           "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll": {}
         }
       },
+      "System.Reactive/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/System.Reactive.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/System.Reactive.dll": {}
+        },
+        "build": {
+          "buildTransitive/net5.0/_._": {}
+        }
+      },
       "System.Reflection.Metadata/1.6.0": {
         "type": "package",
         "compile": {
@@ -426,6 +450,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Reflection.Metadata.dll": {}
+        }
+      },
+      "YamlDotNet/12.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/YamlDotNet.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/YamlDotNet.dll": {}
         }
       }
     }
@@ -1352,6 +1385,21 @@
         "nunit3testadapter.nuspec"
       ]
     },
+    "ObservableWinFormsEvents/3.0.0": {
+      "sha512": "m8tQDhXpPevA18L7ehteFaczz87dC8kMN3blPzbAtqDSujMKp180psUD7cIUgGY4exwHP5DA9fNsgfEVbfanoA==",
+      "type": "package",
+      "path": "observablewinformsevents/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/ObservableWinFormsEvents.dll",
+        "lib/net472/ObservableWinFormsEvents.xml",
+        "lib/net5.0-windows7.0/ObservableWinFormsEvents.dll",
+        "lib/net5.0-windows7.0/ObservableWinFormsEvents.xml",
+        "observablewinformsevents.3.0.0.nupkg.sha512",
+        "observablewinformsevents.nuspec"
+      ]
+    },
     "Selenium.WebDriver/4.4.0": {
       "sha512": "gg/fFUW+SQEdOMaZvkKSau6m4xbMG2qBW6cCW6nGW1CtO0coA8OLYpHcQLpsKcc6q68i/Uq1wjtiVfiNXykJUQ==",
       "type": "package",
@@ -1403,6 +1451,35 @@
         "seleniumextras.waithelpers.nuspec"
       ]
     },
+    "System.Reactive/5.0.0": {
+      "sha512": "erBZjkQHWL9jpasCE/0qKAryzVBJFxGHVBAvgRN1bzM0q2s1S4oYREEEL0Vb+1kA/6BKb5FjUZMp5VXmy+gzkQ==",
+      "type": "package",
+      "path": "system.reactive/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net5.0/_._",
+        "build/netcoreapp3.1/System.Reactive.dll",
+        "build/netcoreapp3.1/System.Reactive.targets",
+        "build/netcoreapp3.1/System.Reactive.xml",
+        "buildTransitive/net5.0/_._",
+        "buildTransitive/netcoreapp3.1/System.Reactive.targets",
+        "lib/net472/System.Reactive.dll",
+        "lib/net472/System.Reactive.xml",
+        "lib/net5.0-windows10.0.19041/System.Reactive.dll",
+        "lib/net5.0-windows10.0.19041/System.Reactive.xml",
+        "lib/net5.0/System.Reactive.dll",
+        "lib/net5.0/System.Reactive.xml",
+        "lib/netcoreapp3.1/_._",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.16299/System.Reactive.dll",
+        "lib/uap10.0.16299/System.Reactive.pri",
+        "lib/uap10.0.16299/System.Reactive.xml",
+        "system.reactive.5.0.0.nupkg.sha512",
+        "system.reactive.nuspec"
+      ]
+    },
     "System.Reflection.Metadata/1.6.0": {
       "sha512": "COC1aiAJjCoA5GBF+QKL2uLqEBew4JsCkQmoHKbN3TlOZKa2fKLz5CpiRQKDz0RsAOEGsVKqOD5bomsXq/4STQ==",
       "type": "package",
@@ -1423,6 +1500,31 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "YamlDotNet/12.0.0": {
+      "sha512": "sMp20zI63j7xVoor98vGeDxteLeyuAlM330L7XbXxMMPjLdP1mwoK/5Nn/8Vldc9hUMN5otkg88bVLEtQnPdaw==",
+      "type": "package",
+      "path": "yamldotnet/12.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "images/yamldotnet.png",
+        "lib/net35/YamlDotNet.dll",
+        "lib/net35/YamlDotNet.xml",
+        "lib/net45/YamlDotNet.dll",
+        "lib/net45/YamlDotNet.xml",
+        "lib/net47/YamlDotNet.dll",
+        "lib/net47/YamlDotNet.xml",
+        "lib/net6.0/YamlDotNet.dll",
+        "lib/net6.0/YamlDotNet.xml",
+        "lib/netstandard2.0/YamlDotNet.dll",
+        "lib/netstandard2.0/YamlDotNet.xml",
+        "lib/netstandard2.1/YamlDotNet.dll",
+        "lib/netstandard2.1/YamlDotNet.xml",
+        "yamldotnet.12.0.0.nupkg.sha512",
+        "yamldotnet.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -1434,9 +1536,11 @@
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.3.0",
       "NUnit3TestAdapter >= 4.2.1",
+      "ObservableWinFormsEvents >= 3.0.0",
       "Selenium.WebDriver >= 4.4.0",
       "Selenium.WebDriver.ChromeDriver >= 104.0.5112.7900",
       "SeleniumExtras.WaitHelpers >= 1.0.2",
+      "YamlDotNet >= 12.0.0",
       "coverlet.collector >= 3.1.2"
     ]
   },
@@ -1507,6 +1611,10 @@
             "target": "Package",
             "version": "[4.2.1, )"
           },
+          "ObservableWinFormsEvents": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
           "Selenium.WebDriver": {
             "target": "Package",
             "version": "[4.4.0, )"
@@ -1518,6 +1626,10 @@
           "SeleniumExtras.WaitHelpers": {
             "target": "Package",
             "version": "[1.0.2, )"
+          },
+          "YamlDotNet": {
+            "target": "Package",
+            "version": "[12.0.0, )"
           },
           "coverlet.collector": {
             "target": "Package",
@@ -1542,5 +1654,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ObservableWinFormsEvents 3.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "ObservableWinFormsEvents",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

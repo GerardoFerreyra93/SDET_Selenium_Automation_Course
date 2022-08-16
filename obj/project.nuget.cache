@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4JRc/LwKkG8Gi1ZkbhzkK2bA3sEMcjNS8+gq1dIM8oEMjgKzo2oFhjzaKrUYjNUMFOQ29Q+L4f4ePpmgjeajWg==",
+  "dgSpecHash": "qIQDwqysSda7/giwDxgKxr2DoHhaciv05iCZEK2qTrPX6BRUKoDcgwkxj9WMxkQYCdUjQYRAFT/guo4JHw4VCw==",
   "success": true,
   "projectFilePath": "C:\\Users\\gerardo.ferreyra\\source\\repos\\SeleniumTest\\SeleniumTest\\SeleniumTest.csproj",
   "expectedPackageFiles": [
@@ -19,10 +19,24 @@
     "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
     "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\nunit.analyzers\\3.3.0\\nunit.analyzers.3.3.0.nupkg.sha512",
     "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\nunit3testadapter\\4.2.1\\nunit3testadapter.4.2.1.nupkg.sha512",
+    "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\observablewinformsevents\\3.0.0\\observablewinformsevents.3.0.0.nupkg.sha512",
     "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\selenium.webdriver\\4.4.0\\selenium.webdriver.4.4.0.nupkg.sha512",
     "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\selenium.webdriver.chromedriver\\104.0.5112.7900\\selenium.webdriver.chromedriver.104.0.5112.7900.nupkg.sha512",
     "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\seleniumextras.waithelpers\\1.0.2\\seleniumextras.waithelpers.1.0.2.nupkg.sha512",
-    "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
+    "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
+    "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
+    "C:\\Users\\gerardo.ferreyra\\.nuget\\packages\\yamldotnet\\12.0.0\\yamldotnet.12.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ObservableWinFormsEvents 3.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "ObservableWinFormsEvents",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

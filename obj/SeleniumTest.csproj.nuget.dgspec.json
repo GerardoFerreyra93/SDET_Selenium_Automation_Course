@@ -68,6 +68,10 @@
               "target": "Package",
               "version": "[4.2.1, )"
             },
+            "ObservableWinFormsEvents": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Selenium.WebDriver": {
               "target": "Package",
               "version": "[4.4.0, )"
@@ -79,6 +83,10 @@
             "SeleniumExtras.WaitHelpers": {
               "target": "Package",
               "version": "[1.0.2, )"
+            },
+            "YamlDotNet": {
+              "target": "Package",
+              "version": "[12.0.0, )"
             },
             "coverlet.collector": {
               "target": "Package",
