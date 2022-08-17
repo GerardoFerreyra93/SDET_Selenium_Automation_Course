@@ -9,30 +9,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
-
+using OpenQA.Selenium.Interactions;
 
 namespace SeleniumTest.Accions
 {
     public class FacebookLogginAccions : BrowserDriverInit
     {
         BrowserDriverInit browser;
-        Click c = new Click();
-        
+               
        
         private IWebElement DynamicId => browser.getDriver.FindElement(By.XPath("//a[@href='/dynamicid']"));
         private IWebElement DynamicIdTitle => browser.getDriver.FindElement(By.XPath("//h3"));
         private IWebElement DynamicIdButton => browser.getDriver.FindElement(By.XPath("//button[@class='btn btn-primary']"));
         private IWebElement ClassAttributeId => browser.getDriver.FindElement(By.XPath("//a[@href='/classattr']"));
-        private IWebElement ClassAttributeButton => browser.getDriver.FindElement(By.XPath("/html/body/section/div/button[1]"));
+        private IWebElement ClassAttributeButton => browser.getDriver.FindElement(By.XPath("//button[contains(@class, ' btn-primary ')]"));
         private IWebElement HiddenLayersId => browser.getDriver.FindElement(By.XPath("//a[@href='/hiddenlayers']"));
         private IWebElement HiddenLayersTitle => browser.getDriver.FindElement(By.XPath("//h3"));
         private IWebElement LoadDelayId => browser.getDriver.FindElement(By.XPath("//a[@href='/loaddelay']"));
         private IWebElement LoadDelayButton => browser.getDriver.FindElement(By.XPath("//button[@class='btn btn-primary']"));
         private IWebElement ClickId => browser.getDriver.FindElement(By.XPath("//a[@href='/click']"));
-        private IWebElement ClickIdButton => browser.getDriver.FindElement(By.CssSelector("#badButton"));
+        private IWebElement ClickIdButton => browser.getDriver.FindElement(By.XPath("//button[@class='btn btn-primary']"));
         private IWebElement TextInputId => browser.getDriver.FindElement(By.XPath("//a[@href='/textinput']"));
         private IWebElement TextInputNewName => browser.getDriver.FindElement(By.XPath("//*[@id='newButtonName']"));
-        private IWebElement TextInputButton => browser.getDriver.FindElement(By.XPath("//button[@class='btn btn-primary']"));
+        private IWebElement TextInputButton => browser.getDriver.FindElement(By.XPath("//button[@class='btn btn-primary']")); 
+        private IWebElement ScrollbarsId => browser.getDriver.FindElement(By.XPath("//a[@href='/scrollbars']"));        
+        private IWebElement DynamicTableId => browser.getDriver.FindElement(By.XPath("//a[@href='/dynamictable']"));
+        private IWebElement VerifyTextId => browser.getDriver.FindElement(By.XPath("//a[@href='/verifytext']"));
+        private IWebElement ProgressBarId => browser.getDriver.FindElement(By.XPath("//a[@href='/progressbar']"));
+       
+
+
+
 
 
 
@@ -60,7 +67,7 @@ namespace SeleniumTest.Accions
             System.Threading.Thread.Sleep(5000);
             Assert.IsTrue(DynamicIdTitle.Displayed);
             Assert.IsTrue(DynamicIdButton.Displayed);
-
+            System.Threading.Thread.Sleep(5000);
 
         }
 
@@ -69,9 +76,10 @@ namespace SeleniumTest.Accions
 
             ClassAttributeId.Click();           
             ClassAttributeButton.Click();
+            System.Threading.Thread.Sleep(5000); // cambiar por implicit                    
+            IAlert alert = browser.getDriver.SwitchTo().Alert();//cerrar pop-ups
+            alert.Accept();
             System.Threading.Thread.Sleep(5000);
-            //close popup windwos pending
-
         }
 
         internal void ValidateHiddenLayers()
@@ -86,39 +94,60 @@ namespace SeleniumTest.Accions
             LoadDelayId.Click();
             System.Threading.Thread.Sleep(5000);
             LoadDelayButton.Click();
-
-
+            System.Threading.Thread.Sleep(5000);
         }
 
         internal void ValidateClick()
         {
             ClickId.Click();
             System.Threading.Thread.Sleep(10000);
-            ClickIdButton.Click();    // se tiene que emular el click fisico     
-
-        }
-
-        internal void ButtonClick()
-        {
-            ClickId.Click();
+            ClickIdButton.Click();
             System.Threading.Thread.Sleep(10000);
-            Point p = new Point();
-            p.X = 50;
-            p.Y = 50;
-            c.leftClick(p);
         }
 
-
-
+    
         internal void ValidateTextInput()
         {
             TextInputId.Click();
             System.Threading.Thread.Sleep(10000);
-            TextInputNewName.SendKeys("GerardoFerreyra");//se tiene que emular
+            TextInputNewName.SendKeys("GerardoFerreyra");
             TextInputButton.Click();
+            System.Threading.Thread.Sleep(10000);            
 
         }     
 
+        internal void ValidateScrollbars()
+        {
+            ScrollbarsId.Click();
+            System.Threading.Thread.Sleep(10000);      
+            
+            IWebElement s = browser.getDriver.FindElement(By.XPath("//button[@class='btn btn-primary']")); ;
+            IJavaScriptExecutor je = (IJavaScriptExecutor)browser.getDriver;
+            je.ExecuteScript("arguments[0].scrollIntoView(true);", s);
+            System.Threading.Thread.Sleep(10000);              
+
+        }
+
+        internal void ValidateDynamicTable()
+        {
+            DynamicTableId.Click();
+            System.Threading.Thread.Sleep(10000);
+
+
+        }
+
+        internal void ValidateVerifyText()
+        {
+            VerifyTextId.Click();
+            System.Threading.Thread.Sleep(10000);
+            
+        }
+
+        internal void ValidateProgressBar()
+        {
+            ProgressBarId.Click();
+            System.Threading.Thread.Sleep(10000);
+        }
 
 
     }

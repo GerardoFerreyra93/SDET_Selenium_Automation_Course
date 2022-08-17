@@ -14,7 +14,7 @@ namespace SeleniumTest
         }
 
         [Test]
-        public void PlayGroundTest1()
+        public void Test1_DynamicID()
         {
             ValidateDynamicIdElement();
             
@@ -22,47 +22,72 @@ namespace SeleniumTest
 
 
         [Test]
-        public void PlayGroundTest2()
+        public void Test2_ClassAttribute()
         {
 
             ValidateClassAttribute();
         }
 
         [Test]
-        public void PlayGroundTest3()
+        public void Test3_HiddenLayers()
         {
 
             ValidateHiddenLayers();
         }
 
         [Test]
-        public void PlayGroundTest4()
+        public void Test4_LoadDelay()
         {
 
             ValidateLoadDelay();
         }
 
         [Test]
-        public void PlayGroundTest5()
+        public void Test5_Click()
         {
 
             ValidateClick();
         }
 
         [Test]
-        public void PlayGroundTest6()
-        {
-
-            ButtonClick();
-        }
-
-        [Test]
-        public void PlayGroundTest7()
+        public void Test6_TextInput()
         {
 
             ValidateTextInput();
         }
         
+
+        [Test]
+        public void Test7_Scrollbars()
+        {
+
+            ValidateScrollbars();
+        }
+
+        [Test]
+        public void Test8_DynamicTable()
+        {
+
+            ValidateDynamicTable();
+        }
+
+        [Test]
+        public void Test9_VerifyText()
+        {
+
+            ValidateVerifyText();
+        }
+
+        [Test]
+        public void Test10_ProgressBar()
+        {
+
+            ValidateProgressBar();
+       
+        }
+        
+
+
 
 
         [TearDown]
