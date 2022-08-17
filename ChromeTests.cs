@@ -85,6 +85,31 @@ namespace SeleniumTest
             ValidateProgressBar();
        
         }
+
+
+        [Test]
+        public void Test11_Visibility()
+        {
+
+            ValidateVisibility();
+
+        }
+
+
+        [Test]
+        public void Test12_SampleApp()
+        {
+
+            ValidateSampleApp();
+
+        }
+        [Test]
+        public void Test13_MouseOver()
+        {
+
+            ValidateMouseOver();
+
+        }
         
 
 
